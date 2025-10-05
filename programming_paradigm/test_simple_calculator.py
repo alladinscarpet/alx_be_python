@@ -15,24 +15,19 @@ class TestAdd(unittest.TestCase):
     self.calc = SimpleCalculator()
 
   def test_addition(self):
-    result = self.calc.add(7,3)
-    self.assertEqual(result, 10)
+    self.assertEqual(self.calc.add(7,3), 10)
 
   def test_subtraction(self):
-    result = self.calc.subtract(7, 3)
-    self.assertEqual(result, 4)
+    self.assertEqual(self.calc.subtract(7, 3), 4)
 
   def test_multiplication(self):
-    result = self.calc.multiply(7, 3)
-    self.assertEqual(result, 21)
+    self.assertEqual(self.calc.multiply(7, 3), 21)
 
   def test_division(self):
-    result = self.calc.divide(10, 5)
-    self.assertEqual(result, 2)
+    self.assertEqual(self.calc.divide(10, 5), 2)
 
   def test_division_by_zero(self):
-    result = self.calc.divide(10, 0)
-    self.assertIsNone(result)
+    self.assertIsNone(self.calc.divide(10, 0))
 
 
 if __name__ == "__main__":
