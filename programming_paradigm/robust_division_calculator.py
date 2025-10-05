@@ -19,7 +19,7 @@ def safe_divide(numerator, denominator):
             raise ZeroDivisionError
 
         result = numerator / denominator
-        return f"The result of the division is: {result}"
+        return f"The result of the division is {result}"
 
     # handles error instead of letting program crash.
     except ZeroDivisionError:
